@@ -355,11 +355,11 @@ body {
     animation-delay: -2s;    
   }
   @keyframes example {
-    0%   {left:0px; top:0px;} 
-    25%  {left:30px; top:0px;}
-    50%  {left:400px; top:100px;}
-    75%  {left:0px; top:100px;} 
-    100% {left:0px; top:0px;}
+    0%   {opacity: 0; left:0px; top:0px;} 
+    25%  {opacity: .1; left:30px; top:0px;}
+    50%  {opacity: .3; left:400px; top:100px;}
+    75%  {opacity: .5; left:0px; top:100px;} 
+    100% {opacity: 1; left:0px; top:0px;}
   }
 
 /* .fade {
