@@ -219,7 +219,6 @@ body {
     color: #fff;
     text-transform: uppercase;
     line-height: 0;
-
 }
 
 .main-slider__title {
@@ -252,8 +251,7 @@ body {
     font-family: 'Catamaran';
     font-size: 65px;
     font-weight: 600;
-    color: #1E2D78;
-    
+    color: #1E2D78;    
 }
 
 .main-slider__btn {
@@ -348,7 +346,6 @@ body {
     background-color: #f7f7f7;
 }
 
-
 .anim_text {
     animation-name: example;
     animation-duration: 4s;
@@ -361,23 +358,6 @@ body {
     75%  {opacity: .5; left:0px; top:100px;} 
     100% {opacity: 1; left:0px; top:0px;}
   }
-
-/* .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration:1.5s;
-    animation-name: fade;
-    animation-duration:1.5s;
-}
-
-@-webkit-keyframes fade {
-    from{opacity: 1;}
-    to{opacity: 0.8}
-}
-@keyframes fade {
-    from{opacity: 1;}
-    to{opacity: 0.8;}
-} */
-
 /* main slider end*/
 
 /* main working start*/
@@ -518,7 +498,6 @@ details[open] {
         transform: scale(1.05);
     }
 }
-
 /* main working end*/
 
 /* main services start*/
@@ -616,7 +595,6 @@ details[open] {
 .media-video {
     width: 55%;
 }
-
 /* main media end*/
 
 /* main carusel start*/
@@ -723,8 +701,6 @@ details[open] {
 .carusel-item__text {
     text-align: center;
 }
-
-
 /* main carusel end*/
 
 /* main discount start*/
@@ -827,7 +803,6 @@ details[open] {
         background-position: 0 0;
     }
 }
-
 /* main discount end*/
 
 /* main services-tab start*/
@@ -923,7 +898,6 @@ details[open] {
 .tab-content__text {
     color: #656565;
 }
-
 /* main services-tab end*/
 
 /* main team start*/
@@ -987,7 +961,6 @@ details[open] {
     }
 }
 
-
 .team-item__title {
     font-size: 19px;
     font-weight: 600;
@@ -1004,7 +977,6 @@ details[open] {
     text-align: center;
     text-transform: uppercase;
 }
-
 /* main team end*/
 
 /* main request start*/
@@ -1102,7 +1074,17 @@ textarea:focus {
     background-color: #4246b3;
 }
 
-/* main team end*/
+.error .form-input {
+    border-color: red;
+}
+
+.error-label {
+    display: block;
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* main request end*/
 
 /* main news start*/
 .news {
@@ -1151,7 +1133,6 @@ textarea:focus {
 .news-texts {
     margin: 15px 0;
 }
-
 /* main news end*/
 
 /* main partners start*/
@@ -1182,7 +1163,6 @@ textarea:focus {
         transform: scale(1.1);
     }
 }
-
 /* main partners end*/
 
 /* Loader start */
