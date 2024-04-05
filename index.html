@@ -69,12 +69,8 @@
     </header>
     <main class="main">
         <section class="slider">   
-            <div class="wrapper">  
-                
-                
-
-                <div class="main-slider">
-                     
+            <div class="wrapper">
+                <div class="main-slider">                     
                     <div class="slider-blocks">
                         <div class="slider-items fade">                        
                             <p class="main-slider__subtitle slider-subtitle anim_text">dental practice</p>                            
@@ -86,7 +82,6 @@
                             </div>
                             <div class="slider_img"><img class="" src="./img/slider-foto.png" alt="SLide 1"></div>
                         </div>
-
                         <div class="slider-items fade">                        
                             <p class="main-slider__subtitle slider-subtitle anim_text">dental practice</p>                            
                             <p class="main-slider__title slider-title anim_text">We provide the best</p>                            
@@ -97,7 +92,6 @@
                             </div>
                             <div class="slider_img"><img class="" src="./img/slider-foto2.png" alt="SLide 1"></div>
                         </div>
-
                         <div class="slider-items fade">                        
                             <p class="main-slider__subtitle slider-subtitle anim_text">dental practice</p>                            
                             <p class="main-slider__title slider-title anim_text">We provide the best</p>                            
@@ -108,7 +102,6 @@
                             </div>
                             <div class="slider_img"><img class="" src="./img/slider-foto3.png" alt="SLide 1"></div>
                         </div>
-
                         <div class="slider-items fade">                        
                             <p class="main-slider__subtitle slider-subtitle anim_text">dental practice</p>                            
                             <p class="main-slider__title slider-title anim_text">We provide the best</p>                            
@@ -119,7 +112,6 @@
                             </div>
                             <div class="slider_img"><img class="" src="./img/slider-foto4.png" alt="SLide 1"></div>
                         </div>
-
                         <div class="slider-items fade">                        
                             <p class="main-slider__subtitle slider-subtitle anim_text">dental practice</p>                            
                             <p class="main-slider__title slider-title anim_text">We provide the best</p>                            
@@ -130,31 +122,14 @@
                             </div>
                             <div class="slider_img"><img class="" src="./img/slider-foto5.png" alt="SLide 1"></div>
                         </div>
-
-
-
                     </div>
-                    
-                        
-
                     <div class="slider_buttons">
                         <button class="slider-arrow__left"></button>
                         <button class="slider-arrow__right"></button>
                     </div>
-
                 </div>
-
-
-                
-
-
-
-
             </div>
         </section>
-
-
-
         <section class="working">
             <div class="container">
                 <div class="working-content">
@@ -513,19 +488,19 @@
                     <div class="request-form"> 
                         <h3 class="request-form__title">Request an Appointment</h3>
                         <p class="request-form__span">Proin gravida nibh vel velit auctor aliquet justo.</p>  
-                        <form class="form">  
+                        <form action="/" class="form" id="add-form">  
                             <div class="request-form__label">
                                 <div class="request-form__item">                              
-                                    <input class="form-input" type="text" placeholder="First Name">                              
+                                    <input data-required="true" data-max-length="6" data-min-length="2" class="form-input" type="text" placeholder="First Name">                              
                                 </div>
                                 <div class="request-form__item">                              
-                                    <input class="form-input" type="text" placeholder="Last Name">                              
+                                    <input data-required="true" data-max-length="6" data-min-length="2" class="form-input" type="text" placeholder="Last Name">                              
                                 </div>                          
                                 <div class="request-form__item">                              
-                                    <input class="form-input" type="email" placeholder="E-Mail Adress">                         
+                                    <input data-required="true" class="form-input" type="email" placeholder="E-Mail Adress">                         
                                 </div>
                                 <div class="request-form__item">                              
-                                    <input class="form-input" type="tel" placeholder="Phone Number">                           
+                                    <input data-required="true" class="form-input" type="tel" placeholder="Phone Number">                           
                                 </div>                              
                             </div>
                             <div class="textarea">                              
@@ -595,8 +570,7 @@
                 <img src="./img/partners/partners-6.png" alt="partners" class="partners-item">
             </div>
         </div>
-    </footer>
-   
+    </footer>   
 <script src="./js/app.js"></script>
 </body>
 </html>
