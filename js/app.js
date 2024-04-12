@@ -55,8 +55,9 @@ function showSlide(options) {
 }
 
 // Forms ---------------------------------------------
-
-
+const allDomains = ["google", "yandex", "mail", "gmail", "inbox"]
+const phoneNum = /^[\+]?[(]?[0-9]{2}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/
+ // var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 function removeError(input) {
     const parent = input.parentNode;
     if (parent.classList.contains('error')) {
@@ -78,7 +79,7 @@ function validation(form) {
     const allInputs = form.querySelectorAll('input');
     let result = true;
 
-    // var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+   
 
     for (const input of allInputs) {
         removeError(input)       
@@ -105,6 +106,48 @@ function validation(form) {
                 createError(input, 'Поле не заполнено')
                 result = false
             }
+        }
+
+        if(input.dataset.email) {
+            if(!input.value.includes('@')) {
+                removeError(input)
+                createError(input, `Введен некорректный адрес электронной почты`)                
+                result = false
+            } else {
+                const domain = input.value.split('@')[1].split('.')[0] //yandex,google
+                // console.log(domain)
+                if(!allDomains.includes(domain)) {
+                    createError(input, `Недопустимый домен почты: ${allDomains}`)                    
+                    result = false
+                }
+            }
+        }
+
+        if(input.dataset.phone) {
+
+            if (input.value.match(phoneNum)) { 
+                removeError(input)             
+                
+            } else {
+                removeError(input)
+                createError(input, `Введен некорректный номер телефона`)               
+                result = false
+            }
+
+            // if(!input.value.includes('@')) {
+            //     removeError(input)
+            //     createError(input, `Введен некорректный адрес электронной почты`)                
+            //     result = false
+            // } else {
+            //     const domain = input.value.split('@')[1].split('.')[0] //yandex,google
+            //     // console.log(domain)
+            //     if(!allDomains.includes(domain)) {
+            //         createError(input, `Недопустимый домен почты: ${allDomains}`)                    
+            //         result = false
+            //     }
+            // }
+
+
         }
 
         // if (input.dataset.usermail) {
