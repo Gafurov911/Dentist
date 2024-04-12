@@ -150,7 +150,7 @@ body {
     border: none;
     outline: none;
     transition: .5s;
-    background: url(/img/svg/icon-search.svg) no-repeat center;
+    background: url(../img/svg/icon-search.svg) no-repeat center;
 }
 
 .search-box:hover input {
@@ -402,13 +402,13 @@ body {
     display: flex;
     align-items: center;
     height: 36px;
-    background: url(/img/svg/icon-working-btn.svg) no-repeat 30% center;
+    background: url(../img/svg/icon-working-btn.svg) no-repeat 30% center;
     transition: .2s all;
 }
 
 .working-button:hover,
 .news-button:hover {
-    background: url(/img/svg/icon-working-btn.svg) no-repeat 35% center;
+    background: url(../img/svg/icon-working-btn.svg) no-repeat 35% center;
     opacity: 0.5;
 }
 
@@ -578,7 +578,7 @@ details[open] {
 .media-info__signature {
     width: 380px;
     height: 112px;
-    background: url(/img/signature.png) no-repeat;
+    background: url(../img/signature.png) no-repeat;
     background-size: cover;
     position: relative;
 }
