@@ -43,22 +43,25 @@
                                 <button class="modal__close-btn" id="close-my-modal-btn">X</button>                                
                                 <input class="modal_input" type="checkbox" id="chk" aria-hidden="true">
                                 <div class="signup">
-                                    <form action="/">
+                                    <form id="sign_form" method="post">
                                         <label class="modal_label" for="chk" aria-hidden="true">Sing up</label>
-                                        <input class="modal_input" type="text" name="txt" placeholder="User name">
-                                        
-                                        <input class="modal_input" type="email" name="email" placeholder="Email">
-                                        <input class="modal_input" type="password" name="pswd" placeholder="Passord">
-                                        <input class="modal_input" type="password" name="pswd" placeholder="Confirm Passord">
-                                        <button class="modal_sign_btn">Sign up</button>
+
+                                        <input class="modal_input" type="text" name="name" placeholder="User name">                                        
+                                        <input class="modal_input" type="text" name="email" placeholder="Email">
+                                        <input class="modal_input" type="password" name="pass" placeholder="Passord">
+                                        <input class="modal_input" type="password" name="repass" placeholder="Confirm Passord">
+                                            <div id="error" class="error"></div>
+                                        <input class="modal_sign_btn" type="submit" name="submit" value="Sign up">                                       
                                     </form>
                                 </div>
                                 <div class="login">
-                                    <form action="/">
-                                        <label class="modal_label" for="chk" aria-hidden="true">Login</label>                                        
+                                    <form id="login_form" method="post">
+                                        <label class="modal_label" for="chk" aria-hidden="true">Login</label>  
+
                                         <input class="modal_input" type="email" name="email" id="" placeholder="Email Or User name">
-                                        <input class="modal_input" type="password" name="password" placeholder="Passord">                                        
-                                        <button class="modal_login_btn">Login</button>
+                                        <input class="modal_input" type="password" name="password" placeholder="Passord"> 
+                                            <div id="error"></div>
+                                        <button class="modal_login_btn">Login</button>                                        
                                         <p>Don't have account <a href="#!">Create account</a>.</p>
                                     </form>
                                 </div>                    
