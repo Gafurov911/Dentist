@@ -147,9 +147,6 @@
     transform: scale(.6);
 }
 
-
-
-
 .modal__close-btn {
     position: absolute;
     top: 8px;
@@ -168,4 +165,9 @@
 
 .modal.open .modal__box {
     transform: scale(1);
+}
+
+.error {
+    color: red;
+    text-align: center;
 }
