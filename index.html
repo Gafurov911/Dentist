@@ -6,7 +6,8 @@
     <title>Dentist Home</title>
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css"> 
-    <link rel="stylesheet" href="./css/modal.css">      
+    <link rel="stylesheet" href="./css/modal.css">  
+    <link rel="stylesheet" href="./css/carusel.css">    
 </head>
 <body>
     <div class="mask">
@@ -423,35 +424,64 @@
                     <p class="carusel-text">In sea viderer delicatissimi, urbanitas sententiae quo blandit maiorum euripidis.</p>
                 </div>
                 <div class="carusel-wrap">
-                    <div class="carusel-content">
-                        <div class="carusel-item">
-                            <div class="carusel-item__foto">
-                                <img src="./img/carusel/carusel-1.png" alt="Jenna Johnson" class="carusel-img">
+                    <button id="carusel__prev"><</button>        
+                    <ul class="carusels">
+                        <li class="card">
+                            <div class="img">
+                                <img src="./img/carusel/1.png" alt="img" draggable="false">
                                 <div class="carusel-item__mark">99</div>
-                            </div>                            
+                            </div>
                             <h4 class="carusel-item__title">Quick, easy & reliable</h4>
                             <p class="carusel-item__text">Duis sed odio sit amet nibh vulputate cursus a sit am mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od tincidunt auctor.</p>
                             <h5 class="carusel-subtitle">Jenna Johnson</h5>
-                        </div>
-                        <div class="carusel-item">
-                            <div class="carusel-item__foto">
-                                <img src="./img/carusel/carusel-2.png" alt="Robert Logan" class="carusel-img">
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="./img/carusel/2.png" alt="img" draggable="false">
                                 <div class="carusel-item__mark">99</div>
-                            </div>                            
+                            </div>
                             <h4 class="carusel-item__title">The best clinic in town</h4>
                             <p class="carusel-item__text">Duis sed odio sit amet nibh vulputate cursus a sit am mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od tincidunt auctor.</p>
                             <h5 class="carusel-subtitle">Robert Logan </h5>
-                        </div>
-                        <div class="carusel-item">
-                            <div class="carusel-item__foto">
-                                <img src="./img/carusel/carusel-3.png" alt="August Johns" class="carusel-img">
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="./img/carusel/3.png" alt="img" draggable="false">
                                 <div class="carusel-item__mark">99</div>
-                            </div>                            
+                            </div>
                             <h4 class="carusel-item__title">The true professionals</h4>
                             <p class="carusel-item__text">Duis sed odio sit amet nibh vulputate cursus a sit am mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od tincidunt auctor.</p>
                             <h5 class="carusel-subtitle">August Johns</h5>
-                        </div>
-                    </div>
+                        </li>  
+                        <li class="card">
+                            <div class="img">
+                                <img src="./img/carusel/4.png" alt="img" draggable="false">
+                                <div class="carusel-item__mark">99</div>
+                            </div>
+                            <h4 class="carusel-item__title">Quick, easy & reliable</h4>
+                            <p class="carusel-item__text">Duis sed odio sit amet nibh vulputate cursus a sit am mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od tincidunt auctor.</p>
+                            <h5 class="carusel-subtitle">Jenna Johnson</h5>
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="./img/carusel/5.png" alt="img" draggable="false">
+                                <div class="carusel-item__mark">99</div>
+                            </div>
+                            <h4 class="carusel-item__title">The best clinic in town</h4>
+                            <p class="carusel-item__text">Duis sed odio sit amet nibh vulputate cursus a sit am mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od tincidunt auctor.</p>
+                            <h5 class="carusel-subtitle">Robert Logan </h5>
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="./img/carusel/6.png" alt="img" draggable="false">
+                                <div class="carusel-item__mark">99</div>
+                            </div>
+                            <h4 class="carusel-item__title">The true professionals</h4>
+                            <p class="carusel-item__text">Duis sed odio sit amet nibh vulputate cursus a sit am mauris. Morbi accumsan sum ipsum velit. Nam nec tellus am od tincidunt auctor.</p>
+                            <h5 class="carusel-subtitle">August Johns</h5>
+                        </li>                        
+                    </ul>
+                    <button id="carusel__next">></button>
                 </div>
             </div>
         </section>
@@ -690,5 +720,6 @@
 <script src="./js/app.js"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/slider.js"></script>
+<script src="./js/carusel.js"></script>
 </body>
 </html>
