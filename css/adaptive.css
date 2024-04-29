@@ -8,6 +8,9 @@
 }
 
 @media screen and (max-width:1000px) {
+    .header-about {
+        font-size: 10px;
+    }
     .nav-menu__list {
         grid-template-columns: repeat(6, 90px);
     }
@@ -183,6 +186,10 @@
     .news-text {
         font-size: 17px;
     }
+    .carusel-text {
+        margin: 0 40px;
+        text-align: center;
+    }
     .slider,
     .working,
     .media,
@@ -283,13 +290,13 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 165px;      
+        height: 130px;      
     }
     .discount-title {
-        font-size: 35px;
+        font-size: 33px;
     }
     .discount-subtitle {
-        font-size: 18px;
+        font-size: 16px;
     }
     .discount-info {
         text-align: center;
@@ -350,10 +357,11 @@
         grid-auto-columns: 100%;
     } 
     .discount-title {
-        font-size: 30px;
+        font-size: 28px;
     }
     .discount-subtitle {
-        font-size: 15px;
+        font-size: 13px;
+        margin-bottom: 10px;
     }
     .request-content {
         padding: 25px 0;
@@ -399,9 +407,9 @@
         padding: 15px 15px;
     }
     .discount-title {
-        font-size: 25px;
+        font-size: 22px;
         line-height: 24px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .discount-subtitle,
     .tab-content__title,
@@ -432,6 +440,9 @@
     .arrows {
         top: 85%;
         max-width: 50%;
+    }
+    .team-content {
+        padding: 0;
     }
 }
 @media screen and (max-width: 500px) {
@@ -512,5 +523,83 @@
     .media-info__signature {
         width: 250px;
         height: 75px;   
+    }
+    .discount-subtitle {       
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .services-item__title {
+        font-size: 16px;
+    }
+    .media-info__signature {
+        display: none;
+    }
+    .team-item__title {
+        text-align: center;
+        font-size: 16px;
+    }
+    .team-subtitle {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .request-form__title {
+        font-size: 25px;        
+    }
+    .request-form__span {
+        font-size: 16px;
+    }
+    .working-title {
+        font-size: 22px;
+    }
+    .media-info__title,
+    .carusel-title,
+    .team-title,
+    .news-title {
+        font-size: 30px;
+        line-height: normal;
+    }
+}
+@media screen and (max-width: 450px) {
+    .team-content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 25px;       
+    }
+    .fipper {
+        height: 100%;
+    }
+    .cards {
+        height: 350px;
+    }
+    .team-item__foto {       
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .team-item__title {
+        font-size: 24px;
+    }
+    .team-subtitle {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .navigation .burger_open {
+        font-size: 24px;   
+    }
+    .smile_logo {
+        font-size: 18px;
+    }
+    .searchToggle i {       
+        font-size: 24px;        
+    }
+    .searchBox .search-field {   
+        width: 225px;   
+    }
+    .modal_btn {
+        font-size: 24px;
+    }
+    .working-hours__tel {
+        font-size: 16px;
     }
 }
